@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        p {
+            margin: 3px 0;
+        }
+
+        code {
+            font-size: 100%;
+        }
+
+        header {
+            background-image: linear-gradient(90deg, #07befa, #474cb1, #e51b75);
+        }
+
+        .header_title {
+            padding: 30px 0;
+        }
+
+        .header_block {
+            font-weight: 700;
+        }
+
+        .bg_turquoise {
+            background: #57cff647;
+        }
+
+        .bg_blueviolet {
+            background: #b9c8ff66;
+
+        }
+
+        .c_burgundy {
+            color: #e83e8c;
+        }
+
+        .nav-tabs {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .nav-tabs .tab_link:focus,
+        .nav-tabs .tab_link:hover {
+            color: #343a40;
+
+        }
+
+        .nav-tabs .tab_link:focus,
+        .nav-tabs .tab_link:hover {
+            border-color: transparent;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-tabs .nav-item.show .tab_link,
+        .nav-tabs .tab_link.active {
+            border-color: #fff;
+            background-color: #fff;
+        }
+
+        .tab_link {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        .tabs_card .tab-content {
+            height: 200px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            overflow: auto;
+        }
+
+        .name_api {
+            font-size: 20px;
+        }
+
+        .st_color_scheme {
+            display: block;
+            overflow-x: auto;
+            padding: .5em;
+            background: #1E1E1E;
+            color: #DCDCDC;
+        }
+
+        .c_blue {
+            color: #61AFE3
+        }
+
+        .c_green {
+            color: #98C36E;
+        }
+
+        .c_grey {
+            color: #7F8483;
+        }
+
+        .c_yellow {
+            color: #D19A66;
+        }
+
+        .c_red {
+            color: #E06C6A;
+        }
+
+        .c_purple {
+            color: #BD78DD;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Контент страницы -->
+    <header>
+        <div class="container">
+            <h1 class="header_title text-center text-light">JAVASCRIPT-cheatsheet</h1>
+        </div>
+    </header>
+    <div class="bg_turquoise">
+        <div class="container">
+            <h2 class="text-center header_block">Basic Objects</h2>
+            <hr>
+            <h3 class="text-center">Global Methods</h3>
+            <hr>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name0" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe0"
+                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example0" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name0" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="name_api"><b> <code>parseFloat()</code> </b></p>
+                            <p> принимает строку в качестве аргумента и возвращает десятичное
+                                число (число с плавающей точкой)</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe0" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><b><i><code>parseFloat(строка)</code> </i></b></p>
+                            <p><i class="c_burgundy ">строка</i>-Текстовая строка, из которой вам надо выделить
+                                десятичное
+                                число.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example0" role="tabpanel" aria-labelledby="contact-tab">
+                            <code class="st_color_scheme">
+                                <p><span class="c_blue">parseFloat</span>( <span class="c_green">'10.3px'</span>)<span class="c_grey">// 10.3</span> </p>
+                                <p><span class="c_blue">parseFloat</span>( <span class="c_green">'x10.3px'</span>)<span class="c_grey">// NaN</span> </p>                            
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name1" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe1"
+                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example1" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name1" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="name_api"><b><code>parseInt()</code> </b></p>
+                            <p> принимает строку в качестве аргумента и возвращает целое число в соответствии с
+                                указанным основанием системы счисления.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe1" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><b><i><code>parseInt(string, radix);</code> </i></b></p>
+                            <p><i class="c_burgundy ">string</i>-Значение, которое необходимо проинтерпретировать.
+                                Если
+                                значение параметра string не принадлежит строковому типу, оно преобразуется в него (с
+                                помощью абстрактной операции ToString). Пробелы в начале строки не учитываются.</p>
+                            <p><i class="c_burgundy ">radix</i>-Целое число в диапазоне между 2 и 36, представляющее
+                                собой
+                                основание системы счисления числовой строки string, описанной выше. В основном
+                                пользователи используют десятичную систему счисления и указывают 10. Всегда указывайте
+                                этот параметр, чтобы исключить ошибки считывания и гарантировать корректность исполнения
+                                и предсказуемость результата. Когда основание системы счисления не указано, разные
+                                реализации могут возвращать разные результаты.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="example1" role="tabpanel" aria-labelledby="contact-tab">
+                            <code class="st_color_scheme">
+                                <p><span class="c_blue">parseInt</span>( <span class="c_green">"abc1"</span>)<span class="c_grey">// NaN</span> </p>
+                                <p><span class="c_blue">parseInt</span>( <span class="c_green">"12.7abc"</span>)<span class="c_grey">  // 12</span> </p>  
+                                <p><span class="c_blue">parseInt</span>( <span class="c_green">"11011"</span>, <span class="c_yellow">2</span>)<span class="c_grey">  // 27</span> </p>  
+                                <p><span class="c_blue">parseInt</span>( <span class="c_green">"0xFA"</span>, <span class="c_yellow">16</span>)<span class="c_grey">  // 250</span> </p>                         
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name3" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe3"
+                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example3" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name3" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="name_api"><b><code>isFinite()</code> </b></p>
+                            <p> функция определяет, является ли переданное значение конечным числом. Если необходимо,
+                                параметр сначала преобразуется в число.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe3" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><b><i><code>isFinite(testValue)</code> </i></b></p>
+                            <p><i class="c_burgundy ">testValue</i>-Аргумент для проверки, является ли он конечным
+                                числом.Если аргумент является NaN, положительной или отрицательной бесконечностью, метод
+                                вернёт false; иначе возвращается true.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example3" role="tabpanel" aria-labelledby="contact-tab">
+                            <code class="st_color_scheme">
+                                <p><span class="c_blue">isFinite</span>(<span class="c_yellow">0</span>)<span class="c_grey">// true</span> </p>
+                                <p><span class="c_blue">isFinite</span>(<span class="c_yellow">2e64</span>)<span class="c_grey">  // true</span> </p>  
+                                <p><span class="c_blue">isFinite</span>(<span class="c_red">Infinity</span>)<span class="c_grey">  // false</span> </p>  
+                                <p><span class="c_blue">isFinite</span>(<span class="c_red">NaN</span>)<span class="c_grey">  // false</span> </p>                                 
+                                <p> <span class="c_yellow">Number.</span><span class="c_blue">isFinite</span>(<span class="c_green">"123"</span>)<span class="c_grey">  // false</span> </p>                         
+                                <p> <span class="c_yellow">Number.</span><span class="c_blue">isFinite</span>(<span class="c_yellow">null</span>)<span class="c_grey">  // false</span> </p>                                                        
+                                <p><span class="c_blue">isFinite</span>(<span class="c_green">"123"</span>)<span class="c_grey">  // true</span> </p> 
+                                <p><span class="c_blue">isFinite</span>(<span class="c_yellow">null</span>)<span class="c_grey">  // true</span> </p>                                                        
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name4" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe4"
+                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example4" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name4" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="name_api"><b><code>isNaN()</code> </b></p>
+                            <p> функция определяет является ли литерал или переменная нечисловым значением (NaN) или
+                                нет.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe4" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><b><i><code>isNaN(значение)</code> </i></b></p>
+                            <p><i class="c_burgundy ">значение</i>-Литерал или переменная которые будут проверяться на
+                                нечисловое значение.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example4" role="tabpanel" aria-labelledby="contact-tab">
+                            <code class="st_color_scheme">
+                                <p><span class="c_blue">isNaN</span>(<span class="c_red">NaN</span>)<span class="c_grey">  // true</span> </p>  
+                                <p><span class="c_blue">isNaN</span>({})<span class="c_grey">  // true</span> </p>  
+                                <p><span class="c_blue">isNaN</span>(<span class="c_yellow">undefined</span>)<span class="c_grey">// true</span> </p>
+                                <p><span class="c_blue">isNaN</span>(<span class="c_yellow">true</span>)<span class="c_grey">  // false</span> </p>  
+                                <p><span class="c_blue">isNaN</span>(<span class="c_yellow">null</span>)<span class="c_grey">  // false</span> </p>                                                        
+                                <p><span class="c_blue">isNaN</span>(<span class="c_yellow">37</span>)<span class="c_grey">  // false</span> </p>                                                        
+                                <p><span class="c_blue">isNaN</span>(<span class="c_green">'37'</span>)<span class="c_grey">  // false: "37" преобразуется в число 37 которое не NaN</span> </p>                                                        
+                                <p><span class="c_blue">isNaN</span>(<span class="c_green">'37.37'</span>)<span class="c_grey">  // false: "37.37" преобразуется в число 37.37 которое не NaN</span> </p>                                                        
+                                <p><span class="c_blue">isNaN</span>(<span class="c_green">'37,37'</span>)<span class="c_grey">  // true</span> </p>                                                      
+                                <p><span class="c_blue">isNaN</span>(<span class="c_blue">new </span><span class="c_yellow">Date</span>())<span class="c_grey">  // false</span> </p>                                                        
+                                <p><span class="c_blue">isNaN</span>(<span class="c_blue">new </span><span class="c_yellow">Date</span>()<span class="c_blue">.toString</span>())<span class="c_grey">  // true</span> </p>                                                        
+
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg_turquoise">
+        <div class="container">
+            <h3 class="text-center">Number Methods</h3>
+            <hr>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name100"
+                                role="tab" aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe100"
+                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example100"
+                                role="tab" aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name100" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="name_api"><b> <code>toString()</code> </b></p>
+                            <p>этот метод возвращает строковое представление переданного числа (объекта Number).</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe100" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><b><i><code> num.toString( radix )</code> </i></b></p>
+                            <p><i class="c_burgundy ">radix</i>-Целое число от 2 до 36, указывающее основание числа в
+                                математических системах счисления. Необязательный параметр.
+                                Если значение параметра radix отсутствует, то значение параметра расценивается равным
+                                10. Если значение параметра radix является нецелым числовым значением, то оно будет
+                                округлено вниз до ближайшего целого числа.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example100" role="tabpanel" aria-labelledby="contact-tab">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_purple">var</span> <span class="c_red">num</span>= <span class="c_yellow">"123"</span></p>
+                                <p> <span class="c_red">num</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123"</span> </p>
+                                <p> <span class="c_red">num</span>.<span class="c_blue">toString</span>(<span class="c_yellow">"8"</span>)<span class="c_grey"> // 173</span> </p>
+                                <p> <span class="c_red">num</span>.<span class="c_blue">toString</span>(<span class="c_yellow">"16"</span>)<span class="c_grey"> // 7b</span> </p>
+                                <p> <span class="c_red">123.</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123"</span> </p>
+                                <p> <span class="c_red">123.56</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123.56"</span> </p>
+
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Подключаем плагин Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script>
+       
+
+    </script>
+</body>
+
+</html>
