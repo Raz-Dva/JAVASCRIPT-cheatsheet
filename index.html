@@ -2,10 +2,14 @@
 <html lang="ru">
 
 <head>
+    <title>JS cheatsheet</title>
     <!-- Кодировка веб-страницы -->
     <meta charset="utf-8">
     <!-- Настройка viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <!-- Подключаем Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -136,34 +140,36 @@
             <h3 class="text-center">Global Methods</h3>
             <hr>
             <div class="row">
+                <!-- -----------------------  ID 0 + -------------------------- -->
+
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name0" role="tab"
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name0" role="tab"
                                 aria-controls="home" aria-selected="false">NAME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe0"
-                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe0" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example0" role="tab"
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example0" role="tab"
                                 aria-controls="contact" aria-selected="false">EXAMPLES</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="name0" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="name0" role="tabpanel" aria-labelledby="">
                             <p class="name_api"><b> <code>parseFloat()</code> </b></p>
                             <p> принимает строку в качестве аргумента и возвращает десятичное
                                 число (число с плавающей точкой)</p>
                         </div>
-                        <div class="tab-pane fade  " id="subscribe0" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade  " id="subscribe0" role="tabpanel" aria-labelledby="">
                             <p><b><i><code>parseFloat(строка)</code> </i></b></p>
                             <p><i class="c_burgundy ">строка</i>-Текстовая строка, из которой вам надо выделить
                                 десятичное
                                 число.</p>
                         </div>
-                        <div class="tab-pane fade" id="example0" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="example0" role="tabpanel" aria-labelledby="">
                             <code class="st_color_scheme">
                                 <p><span class="c_blue">parseFloat</span>( <span class="c_green">'10.3px'</span>)<span class="c_grey">// 10.3</span> </p>
                                 <p><span class="c_blue">parseFloat</span>( <span class="c_green">'x10.3px'</span>)<span class="c_grey">// NaN</span> </p>                            
@@ -175,25 +181,25 @@
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item ">
-                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name1" role="tab"
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name1" role="tab"
                                 aria-controls="home" aria-selected="false">NAME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe1"
-                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe1" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example1" role="tab"
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example1" role="tab"
                                 aria-controls="contact" aria-selected="false">EXAMPLES</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="name1" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="name1" role="tabpanel" aria-labelledby="">
                             <p class="name_api"><b><code>parseInt()</code> </b></p>
                             <p> принимает строку в качестве аргумента и возвращает целое число в соответствии с
                                 указанным основанием системы счисления.</p>
                         </div>
-                        <div class="tab-pane fade" id="subscribe1" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="subscribe1" role="tabpanel" aria-labelledby="">
                             <p><b><i><code>parseInt(string, radix);</code> </i></b></p>
                             <p><i class="c_burgundy ">string</i>-Значение, которое необходимо проинтерпретировать.
                                 Если
@@ -208,7 +214,7 @@
                                 реализации могут возвращать разные результаты.</p>
 
                         </div>
-                        <div class="tab-pane fade" id="example1" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="example1" role="tabpanel" aria-labelledby="">
                             <code class="st_color_scheme">
                                 <p><span class="c_blue">parseInt</span>( <span class="c_green">"abc1"</span>)<span class="c_grey">// NaN</span> </p>
                                 <p><span class="c_blue">parseInt</span>( <span class="c_green">"12.7abc"</span>)<span class="c_grey">  // 12</span> </p>  
@@ -222,33 +228,34 @@
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item ">
-                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name3" role="tab"
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name3" role="tab"
                                 aria-controls="home" aria-selected="false">NAME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe3"
-                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe3" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example3" role="tab"
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example3" role="tab"
                                 aria-controls="contact" aria-selected="false">EXAMPLES</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="name3" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="name3" role="tabpanel" aria-labelledby="">
                             <p class="name_api"><b><code>isFinite()</code> </b></p>
                             <p> функция определяет, является ли переданное значение конечным числом. Если необходимо,
                                 параметр сначала преобразуется в число.</p>
                         </div>
-                        <div class="tab-pane fade" id="subscribe3" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="subscribe3" role="tabpanel" aria-labelledby="">
                             <p><b><i><code>isFinite(testValue)</code> </i></b></p>
                             <p><i class="c_burgundy ">testValue</i>-Аргумент для проверки, является ли он конечным
                                 числом.Если аргумент является NaN, положительной или отрицательной бесконечностью, метод
                                 вернёт false; иначе возвращается true.</p>
                         </div>
-                        <div class="tab-pane fade" id="example3" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="example3" role="tabpanel" aria-labelledby="">
                             <code class="st_color_scheme">
                                 <p><span class="c_blue">isFinite</span>(<span class="c_yellow">0</span>)<span class="c_grey">// true</span> </p>
+                                <p><span class="c_blue">isFinite</span>(<span class="c_yellow">''</span>)<span class="c_grey">  // true</span> </p>                                                        
                                 <p><span class="c_blue">isFinite</span>(<span class="c_yellow">2e64</span>)<span class="c_grey">  // true</span> </p>  
                                 <p><span class="c_blue">isFinite</span>(<span class="c_red">Infinity</span>)<span class="c_grey">  // false</span> </p>  
                                 <p><span class="c_blue">isFinite</span>(<span class="c_red">NaN</span>)<span class="c_grey">  // false</span> </p>                                 
@@ -264,30 +271,30 @@
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item ">
-                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name4" role="tab"
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name4" role="tab"
                                 aria-controls="home" aria-selected="false">NAME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe4"
-                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe4" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example4" role="tab"
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example4" role="tab"
                                 aria-controls="contact" aria-selected="false">EXAMPLES</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="name4" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="name4" role="tabpanel" aria-labelledby="">
                             <p class="name_api"><b><code>isNaN()</code> </b></p>
                             <p> функция определяет является ли литерал или переменная нечисловым значением (NaN) или
                                 нет.</p>
                         </div>
-                        <div class="tab-pane fade" id="subscribe4" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="subscribe4" role="tabpanel" aria-labelledby="">
                             <p><b><i><code>isNaN(значение)</code> </i></b></p>
                             <p><i class="c_burgundy ">значение</i>-Литерал или переменная которые будут проверяться на
                                 нечисловое значение.</p>
                         </div>
-                        <div class="tab-pane fade" id="example4" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="example4" role="tabpanel" aria-labelledby="">
                             <code class="st_color_scheme">
                                 <p><span class="c_blue">isNaN</span>(<span class="c_red">NaN</span>)<span class="c_grey">  // true</span> </p>  
                                 <p><span class="c_blue">isNaN</span>({})<span class="c_grey">  // true</span> </p>  
@@ -307,34 +314,31 @@
                 </div>
 
             </div>
-        </div>
-    </div>
-    <div class="bg_turquoise">
-        <div class="container">
             <h3 class="text-center">Number Methods</h3>
             <hr>
             <div class="row">
+                <!-- -----------------------  ID 100 + -------------------------- -->
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link tab_link active" id="home-tab" data-toggle="tab" href="#name100"
-                                role="tab" aria-controls="home" aria-selected="false">NAME</a>
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name100" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="profile-tab" data-toggle="tab" href="#subscribe100"
-                                role="tab" aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe100" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab_link" id="contact-tab" data-toggle="tab" href="#example100"
-                                role="tab" aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example100" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="name100" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="name100" role="tabpanel" aria-labelledby="">
                             <p class="name_api"><b> <code>toString()</code> </b></p>
                             <p>этот метод возвращает строковое представление переданного числа (объекта Number).</p>
                         </div>
-                        <div class="tab-pane fade  " id="subscribe100" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade  " id="subscribe100" role="tabpanel" aria-labelledby="">
                             <p><b><i><code> num.toString( radix )</code> </i></b></p>
                             <p><i class="c_burgundy ">radix</i>-Целое число от 2 до 36, указывающее основание числа в
                                 математических системах счисления. Необязательный параметр.
@@ -342,7 +346,7 @@
                                 10. Если значение параметра radix является нецелым числовым значением, то оно будет
                                 округлено вниз до ближайшего целого числа.</p>
                         </div>
-                        <div class="tab-pane fade" id="example100" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="example100" role="tabpanel" aria-labelledby="">
                             <code class="st_color_scheme">
                                 <p> <span class="c_purple">var</span> <span class="c_red">num</span>= <span class="c_yellow">"123"</span></p>
                                 <p> <span class="c_red">num</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123"</span> </p>
@@ -351,6 +355,842 @@
                                 <p> <span class="c_red">123.</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123"</span> </p>
                                 <p> <span class="c_red">123.56</span>.<span class="c_blue">toString</span>()<span class="c_grey"> // "123.56"</span> </p>
 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name101" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe101" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example101" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name101" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>toFixed()</code> </b></p>
+                            <p>форматирует число, используя запись с фиксированной запятой.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe101" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>num.toFixed([digits])</code> </i></b></p>
+                            <p><i class="c_burgundy ">digits</i> Необязательный параметр. Количество цифр после
+                                десятичной запятой; может быть значением между 0 и 20 включительно, хотя реализации
+                                могут поддерживать и больший диапазон значений. Если аргумент опущен, он считается
+                                равным 0.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example101" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_purple">var</span> <span class="c_red">num</span>= <span class="c_yellow">12345.6789</span></p>
+                                <p> <span class="c_red">num</span>.<span class="c_blue">toFixed</span>()<span class="c_grey"> // '12346' обратите внимание на округление</span> </p>
+                                <p> <span class="c_red">num</span>.<span class="c_blue">toFixed</span>(<span class="c_yellow">1</span>)<span class="c_grey"> // '12345.7' обратите внимание на округление</span> </p>
+                                <p> <span class="c_yellow">-2.34</span>.<span class="c_blue">toFixed</span>(<span class="c_yellow">1</span>)<span class="c_grey"> // -2.3 typeof number</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 class="text-center">String Methods</h3>
+            <hr>
+            <div class="row">
+                <!-- -----------------------  ID 110 + -------------------------- -->
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name110" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe110" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example110" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name110" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>trim()</code> </b></p>
+                            <p>удаляет пробельные символы с начала и конца строки. Пробельными символами в этом
+                                контексте считаются все собственно пробельные символы (пробел, табуляция, неразрывный
+                                пробел и прочие) и все символы конца строки (LF, CR и прочие \n \t \r).</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe110" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>String.prototype.trim()</code></i></b></p>
+                            <p>возвращает строку с вырезанными пробельными символами с её концов. Метод trim() не
+                                изменяет значение самой строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example110" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_purple">var</span> <span class="c_red">orig</span> = <span class="c_yellow">'   foo  '</span></p>
+                                <p> <span class="c_red">console</span>.<span class="c_blue">log</span>(<span class="c_red">orig</span>.<span class="c_blue">trim</span>()) <span class="c_grey"> // 'foo'</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name111" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe111" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example111" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name111" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>charAt()</code></b></p>
+                            <p>возвращает указанный символ из строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe111" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.charAt(index)</code> </i></b></p>
+                            <p><i class="c_burgundy ">index</i>Целое число от 0 до длины строки минус 1.</p>
+                            <p>Символы в строке идут слева направо. Индекс первого символа равен 0, а последнего символа
+                                в строке stringName равен stringName.length - 1. Если предоставленный вами параметр
+                                index выходит за пределы этого диапазона, JavaScript вернёт пустую строку.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example111" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_purple">var</span> <span class="c_red">anyString</span>= <span class="c_green">'Дивный новый мир'</span>;</p>
+                                <p> <span class="c_red">anyString</span>.<span class="c_blue">charAt</span>(<span class="c_yellow">0</span>)<span class="c_grey"> // 'Д'</span> </p>
+                                <p> <span class="c_red">anyString</span>.<span class="c_blue">charAt</span>(<span class="c_yellow">1</span>)<span class="c_grey"> // 'и'</span> </p>
+                                <p> <span class="c_red">anyString</span>.<span class="c_blue">charAt</span>(<span class="c_yellow">999</span>)<span class="c_grey"> // ''</span> </p>
+                                <p> <span class="c_red">anyString</span>[<span class="c_yellow">0</span>]<span class="c_grey"> // 'Д'</span> </p>
+                                <p> <span class="c_red">anyString</span>[<span class="c_yellow">999</span>]<span class="c_grey"> // undefined</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name112" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe112" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example112" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name112" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>toLowerCase()</code></b></p>
+                            <p>возвращает значение строки, на которой он был вызван, преобразованное в нижний регистр.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe112" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.toLowerCase()</code> </i></b></p>
+                            <p> возвращает значение строки, преобразованное в нижний регистр. Метод toLowerCase() не
+                                изменяет значение самой строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example112" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'АЛФАВИТ'</span>.<span class="c_blue">toLowerCase</span>() <span class="c_grey"> // 'алфавит'</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name113" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe113" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example113" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name113" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>toUpperCase()</code></b></p>
+                            <p>возвращает значение строки, на которой он был вызван, преобразованное в верхний регистр.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe113" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.toUpperCase()</code> </i></b></p>
+                            <p>Метод toUpperCase() возвращает значение строки, преобразованное в верхний регистр. Метод
+                                toUpperCase() не изменяет значение самой строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example113" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'алфавит'</span>.<span class="c_blue">toUpperCase</span>() <span class="c_grey"> // 'АЛФАВИТ'</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name114" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe114" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example114" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name114" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>indexOf()</code></b></p>
+                            <p>возвращает индекс первого вхождения указанного значения в строковый объект String, на
+                                котором он был вызван, начиная с индекса fromIndex. Возвращает -1, если значение не
+                                найдено.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe114" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.indexOf(searchValue, [fromIndex])</code> </i></b></p>
+                            <p><i class="c_burgundy ">searchValue</i>-Строка, представляющая искомое значение.</p>
+                            <p><i class="c_burgundy ">fromIndex</i>-Необязательный параметр. Местоположение внутри
+                                строки, откуда начинать поиск. Может быть любым целым числом. Значение по умолчанию
+                                установлено в 0. Если fromIndex < 0, поиск ведётся по всей строке (так же, как если бы
+                                    был передан 0). Если fromIndex>= str.length, метод вернёт -1, но только в том
+                                    случае, если searchValue не равен пустой строке, в этом случае он вернёт str.length.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="example114" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">indexOf</span>(<span class="c_green">'Голубой'</span>) <span class="c_grey"> // -1</span> </p> 
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">indexOf</span>(<span class="c_green">''</span>, <span class="c_yellow">8</span>) <span class="c_grey"> // 8</span> </p> 
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">indexOf</span>(<span class="c_green">''</span>, <span class="c_yellow">9</span>) <span class="c_grey"> // 9</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name115" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe115" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example115" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name115" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>lastIndexOf()</code></b></p>
+                            <p>возвращает индекс последнего вхождения указанного значения в строковый объект String, на
+                                котором он был вызван, или -1, если ничего не было найдено. Поиск по строке ведётся от
+                                конца к началу, начиная с индекса fromIndex.Символы в строке идут слева направо. Индекс
+                                первого символа равен 0, а последнего символа в строке stringName равен
+                                stringName.length - 1.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe115" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.lastIndexOf(searchValue[, fromIndex])</code> </i></b></p>
+                            <p><i class="c_burgundy ">searchValue</i>- Строка, представляющая искомое значение.</p>
+                            <p><i class="c_burgundy ">fromIndex</i>-Необязательный параметр. Местоположение внутри
+                                строки, откуда начинать поиск, нумерация индексов идёт слева направо. Может быть любым
+                                целым числом. Значение по умолчанию установлено в str.length. Если оно отрицательно,
+                                трактуется как 0. Если fromIndex > str.length, параметр fromIndex будет трактоваться как
+                                str.length.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="example115" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'канал'</span>.<span class="c_blue">lastIndexOf</span>(<span class="c_green">'а'</span>) <span class="c_grey"> // 3</span> </p> 
+                                <p> <span class="c_green">'канал'</span>.<span class="c_blue">lastIndexOf</span>(<span class="c_green">'а'</span>, <span class="c_yellow">2</span>) <span class="c_grey"> // 1</span> </p> 
+                                <p> <span class="c_green">'канал'</span>.<span class="c_blue">lastIndexOf</span>(<span class="c_green">'а'</span>, <span class="c_yellow">0</span>) <span class="c_grey"> // -1</span> </p> 
+                                <p> <span class="c_green">'канал'</span>.<span class="c_blue">lastIndexOf</span>(<span class="c_green">'ч'</span>) <span class="c_grey"> // -1</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name116" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe116" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example116" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name116" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>charCodeAt()</code></b></p>
+                            <p>возвращает числовое значение Юникода для символа по указанному индексу (за исключением
+                                кодовых точек Юникода, больших 0x10000).Метод charCodeAt() возвращает NaN, если
+                                указанный индекс меньше нуля или больше длины строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe116" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.charCodeAt(index)</code> </i></b></p>
+                            <p><i class="c_burgundy ">index</i>-Целое число больше, либо равное 0 и меньше длины строки;
+                                если параметр не является числом, он устанавливается в 0.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="example116" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'ABC'</span>.<span class="c_blue">charCodeAt</span>(<span class="c_green">0</span>) <span class="c_grey"> // 65</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name117" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe117" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example117" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name117" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>String.fromCharCode()</code></b></p>
+                            <p>возвращает строку, созданную из указанной последовательности значений единиц кода UTF-16.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe117" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>String.fromCharCode(num1[, ...[, numN]])</code> </i></b></p>
+                            <p><i class="c_burgundy ">num1, ..., numN</i>- Последовательность чисел, являющихся
+                                значениями единиц кода UTF-16. Диапазон составляет от 0 до 65535 (0xFFFF). Числа больше
+                                0xFFFF усекаются. Проверка достоверности не производится. Этот метод возвращает
+                                примитивную строку, а не объект String.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="example117" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">String</span>.<span class="c_blue">fromCharCode</span>(<span class="c_yellow">65</span>, <span class="c_yellow">66</span>, <span class="c_yellow">67</span>) <span class="c_grey"> // "ABC"</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name118" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe118" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example118" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name118" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>slice()</code></b></p>
+                            <p> извлекает часть строки и возвращает новую строку без изменения оригинальной строки.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe118" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.slice(beginIndex[, endIndex])</code> </i></b></p>
+                            <p><i class="c_burgundy">beginIndex</i> - Индекс, с которого начинать извлечение (нумерация
+                                начинается с нуля). Если аргумент отрицателен, то трактуется как str.length + beginIndex
+                                (например, если beginIndex равен -3, то он трактуется как str.length - 3). Если
+                                beginIndex не является числом при проверке Number(beginIndex), он трактуется как 0.
+                                Если beginIndex больше или равен str.length, возвращается пустая строка.</p>
+                            <p><i class="c_burgundy">endIndex</i> - Индекс, перед которым заканчивать извлечение
+                                (нумерация начинается с нуля). Символ по этому индексу не будет включён.
+                                Если endIndex опущен или является undefined или больше чем str.length, slice() извлечёт
+                                всё до конца строки. Если аргумент отрицателен, то трактуется как str.length + endIndex
+                                (например, если endIndex равен -3, то он трактуется как str.length - 3). Если аргумент
+                                не undefined и не является числом при проверке Number(endIndex), возвращается пустая
+                                строка.
+                                Если endIndex указан и меньше startIndex, то возвращается пустая строка (например,
+                                slice(-1, -3) или slice(3, 1) вернут "").</p>
+                        </div>
+                        <div class="tab-pane fade" id="example118" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_purple">var</span> <span class="c_red">str1</span>=<span class="c_yellow">'Приближается утро.'</span></p>
+
+                                <p> <span class="c_red">str1</span>.<span class="c_blue">slice</span>(<span class="c_yellow">1</span>, <span class="c_yellow">8</span>) <span class="c_grey"> // "риближа"</span> </p> 
+                                <p> <span class="c_green">'0123456789'</span>.<span class="c_blue">slice</span>(<span class="c_yellow">-1</span>, <span class="c_yellow">10</span>) <span class="c_grey"> // "9"</span> </p> 
+                                <p> <span class="c_green">'0123456789'</span>.<span class="c_blue">slice</span>(<span class="c_yellow">-1</span>, <span class="c_yellow">8</span>) <span class="c_grey"> // ""</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name119" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe119" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example119" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name119" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>repeat()</code></b></p>
+                            <p> конструирует и возвращает новую строку, содержащую указанное количество соединённых
+                                вместе копий строки, на которой он был вызван.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe119" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.repeat(count)</code> </i></b></p>
+                            <p><i class="c_burgundy">count</i> - Целое число от 0 до +∞: [0, +∞), определяющее число
+                                повторений строки во вновь создаваемой и возвращаемой строке. Новая строка, содержащая
+                                указанное количество копий строки, для которой был вызван метод.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example119" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'абв'</span>.<span class="c_blue">repeat</span>(<span class="c_yellow">-1</span>) <span class="c_grey"> //  RangeError</span> </p> 
+                                <p> <span class="c_green">'абв'</span>.<span class="c_blue">repeat</span>(<span class="c_yellow">0</span>) <span class="c_grey"> //  ""</span> </p> 
+                                <p> <span class="c_green">'абв'</span>.<span class="c_blue">repeat</span>(<span class="c_yellow">1</span>) <span class="c_grey"> //  "абв"</span> </p> 
+                                <p> <span class="c_green">'абв'</span>.<span class="c_blue">repeat</span>(<span class="c_yellow">2</span>) <span class="c_grey"> //  "абвабв"</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name120" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe120" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example120" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name120" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>replace()</code></b></p>
+                            <p> возвращает новую строку с некоторыми или всеми сопоставлениями с шаблоном, заменёнными
+                                на заменитель. Шаблон может быть строкой или регулярным выражением, а заменитель может
+                                быть строкой или функцией, вызываемой при каждом сопоставлении.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe120" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.replace(regexp|substr, newSubStr|function[, flags])</code> </i></b></p>
+                            <p><i class="c_burgundy">regexp</i> - Объект регулярного выражения RegExp. Сопоставление
+                                заменяется возвращаемым значением второго параметра.</p>
+                            <p><i class="c_burgundy">substr</i> - Строка, заменяемая на newSubStr. Обратите внимание,
+                                будет заменено только первое вхождение искомой строки.</p>
+                            <p><i class="c_burgundy">newSubStr</i> - Строка, заменяющая подстроку из первого параметра.
+                                Поддерживает несколько специальных шаблонов замены; смотрите ниже раздел Передача строки
+                                в качестве второго параметра.</p>
+                            <p><i class="c_burgundy">function</i> - Функция, вызываемая для создания новой подстроки
+                                (помещаемой вместо подстроки из первого параметра). Аргументы, передаваемые функции,
+                                описаны ниже в разделе Передача функции в качестве второго параметра.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example120" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'12-34-56'</span>.<span class="c_blue">replace</span>(<span class="c_green">"-"</span>, <span class="c_green">":"</span>) <span class="c_grey"> //  12:34-56</span> </p> 
+                                <p> <span class="c_green">'12 34 56'</span>.<span class="c_blue">replace</span>(<span class="c_green">/-/g</span>, <span class="c_green">":"</span>) <span class="c_grey"> //  12:34:56</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name121" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe121" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example121" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name121" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>match()</code></b></p>
+                            <p> возвращает получившиеся совпадения при сопоставлении строки с регулярным выражением.
+                                Будет возвращен Array</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe121" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.match(regexp)</code> </i></b></p>
+                            <p><i class="c_burgundy">regexp</i> - Объект регулярного выражения. Если будет передан
+                                объект obj, не являющийся регулярным выражением, он будет неявно преобразован в объект
+                                RegExp через вызов конструктора new RegExp(obj).
+                            </p>
+
+                        </div>
+                        <div class="tab-pane fade" id="example121" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+
+                                <p> <span class="c_green">"s7t89ring0"</span>.<span class="c_blue">match</span>(<span class="c_green">/\d+/g</span>) <span class="c_grey"> // ["7", "89", "0"]</span> </p> 
+                                <p> <span class="c_green">"s7t89ring0"</span>.<span class="c_blue">match</span>(<span class="c_green">/\D/g</span>) <span class="c_grey"> // ["s", "t", "r", "i", "n", "g"]</span> </p> 
+                                <!-- <p> <span class="c_green">'12 34 56'</span>.<span class="c_blue">replace</span>(<span class="c_green">/-/g</span>, <span class="c_green">":"</span>) <span class="c_grey"> //  12:34:56</span> </p>  -->
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name122" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe122" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example122" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name122" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>includes()</code></b></p>
+                            <p> роверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или
+                                false.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe122" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.includes(searchString[, position])</code> </i></b></p>
+                            <p><i class="c_burgundy">searchString</i> Строка для поиска в данной строке.</p>
+                            <p><i class="c_burgundy">position (Необязательный)</i>Позиция в строке, с которой начинать
+                                поиск строки searchString, по умолчанию 0.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="example122" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">includes</span>(<span class="c_green">'синий'</span>) <span class="c_grey"> //  false</span> </p> 
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">includes</span>(<span class="c_green">'Синий'</span>) <span class="c_grey"> //  true</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name123" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe123" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example123" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name123" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b><code>split()</code></b></p>
+                            <p>разбивает объект String на массив строк путём разделения строки указанной подстрокой.</p>
+                        </div>
+                        <div class="tab-pane fade" id="subscribe123" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>str.split([separator[, limit]])</code> </i></b></p>
+                            <p><i class="c_burgundy">separator</i> Необязательный параметр. Указывает символы,
+                                используемые в качестве разделителя внутри строки. Параметр separator может быть как
+                                строкой, так и регулярным выражением. Если параметр опущен, возвращённый массив будет
+                                содержать один элемент со всей строкой. Если параметр равен пустой строке, строка str
+                                будет преобразована в массив символов.</p>
+                            <p><i class="c_burgundy">limit</i> Необязательный параметр. Целое число, определяющее
+                                ограничение на количество найденных подстрок. Метод split() всё равно разделяет строку
+                                на каждом сопоставлении с разделителем separator, но обрезает возвращаемый массив так,
+                                чтобы он содержал не более limit элементов.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="example123" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p><span class="c_purple">var</span> <span class="c_yellow">str</span> = <span class="c_green">"Welcome, To Devacademy"</span> </p>
+                                <p> <span class="c_yellow">str</span>.<span class="c_blue">split</span>(<span class="c_green">" "</span>) <span class="c_grey"> //  ["Welcome,", "To", "Devacademy"]</span> </p> 
+                                <p> <span class="c_yellow">str</span>.<span class="c_blue">split</span>(<span class="c_green">""</span>) <span class="c_grey"> //  ["W", "e", "l", "c", "o", "m", "e", ",", " ", "T", "o", " ", "D", "e", "v", "a", "c", "a", "d", "e", "m", "y"]</span> </p> 
+                                <p> <span class="c_yellow">str</span>.<span class="c_blue">split</span>(<span class="c_green">","</span>) <span class="c_grey"> //  ["Welcome", " To Devacademy"]</span> </p> 
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center">Math Properties</h3>
+            <hr>
+            <!-- -----------------------  ID 200 + -------------------------- -->
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name200" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe200" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example200" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name200" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Math.floor()</code> </b></p>
+                            <p>округление вниз. Округляет аргумент до ближайшего меньшего целого</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe200" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code> Math.floor(x)</code> </i></b></p>
+                            <p><i class="c_burgundy ">x</i>-Число</p>
+                        </div>
+                        <div class="tab-pane fade" id="example200" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">floor</span>(<span class="c_yellow">45.95</span>)<span class="c_grey"> // 45</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">floor</span>(<span class="c_yellow">8.1</span>)<span class="c_grey"> // 8</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">floor</span>(<span class="c_yellow">-45.95</span>)<span class="c_grey"> // -46</span></p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name201" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe201" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example201" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name201" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Math.ceil()</code> </b></p>
+                            <p>округление вверх. Округляет аргумент до ближайшего большего целого.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe201" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code> Math.ceil(x)</code> </i></b></p>
+                            <p><i class="c_burgundy ">x</i>-Число</p>
+                        </div>
+                        <div class="tab-pane fade" id="example201" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">ceil</span>(<span class="c_yellow">.95</span>)<span class="c_grey"> // 1</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">ceil</span>(<span class="c_yellow">7.008</span>)<span class="c_grey"> // 8</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">ceil</span>(<span class="c_yellow">-7.004</span>)<span class="c_grey"> // 7</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">ceil</span>(<span class="c_yellow">-0.95</span>)<span class="c_grey"> // -0</span></p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name202" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe202" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example202" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name202" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Math.round()</code> </b></p>
+                            <p>возвращает число, округлённое к ближайшему целому.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe202" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>Math.round(x)</code> </i></b></p>
+                            <p><i class="c_burgundy ">x</i>-Число</p>
+                        </div>
+                        <div class="tab-pane fade" id="example202" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">round</span>(<span class="c_yellow">20.49</span>)<span class="c_grey"> // 20</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">round</span>(<span class="c_yellow">20.5</span>)<span class="c_grey"> // 21</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">round</span>(<span class="c_yellow">-20.5</span>)<span class="c_grey"> // -20</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">round</span>(<span class="c_yellow">-20.51</span>)<span class="c_grey"> // -21</span></p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name203" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe203" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example203" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name203" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Math.trunc()</code> </b></p>
+                            <p> возвращает целую часть числа путём удаления всех дробных знаков(отбрасывает все после
+                                точки).</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe203" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>Math.trunc(x)</code> </i></b></p>
+                            <p><i class="c_burgundy ">x</i>-Целая часть данного числа.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example203" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>(<span class="c_yellow">13.37</span>)<span class="c_grey"> // 13</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>(<span class="c_yellow">20.5</span>)<span class="c_grey"> // 20</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>(<span class="c_yellow">0.123</span>)<span class="c_grey"> // 0</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>(<span class="c_green">'-1.123'</span>)<span class="c_grey"> // -1</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>(<span class="c_green">'foo'</span>)<span class="c_grey"> // NaN</span></p>
+                                <p> <span class="c_yellow">Math.</span><span class="c_blue">trunc</span>()<span class="c_grey"> // NaN</span></p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center">Array Methods</h3>
+            <hr>
+            <!-- -----------------------  ID 210 + -------------------------- -->
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name210" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe210" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example210" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name210" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>includes()</code> </b></p>
+                            <p>определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого
+                                true или false.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe210" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>arr.includes(searchElement[, fromIndex = 0])</code> </i></b></p>
+                            <p><i class="c_burgundy">searchElement</i>-Искомый элемент.</p>
+                            <p><i class="c_burgundy ">fromIndex | Необязательный</i>-Позиция в массиве, с которой
+                                начинать поиск элемента searchElement. При отрицательных значениях поиск производится
+                                начиная с индекса array.length + fromIndex по возрастанию. Значение по умолчанию равно
+                                0.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example210" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">[1, 2, 3]</span>.<span class="c_blue">includes</span>(<span class="c_yellow">2</span>)<span class="c_grey"> // true</span></p>
+                                <p> <span class="c_yellow">[1, 2, 3]</span>.<span class="c_blue">includes</span>(<span class="c_yellow">3, 3</span>)<span class="c_grey"> // false</span></p>
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">includes</span>(<span class="c_green">'синий'</span>)<span class="c_grey"> // false</span></p>
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">includes</span>(<span class="c_green">'Синий'</span>)<span class="c_grey"> // true</span></p>
+                                <p> <span class="c_green">'Синий кит'</span>.<span class="c_blue">includes</span>(<span class="c_green">'Синий'</span>, <span class="c_yellow">1</span>)<span class="c_grey"> // false</span></p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name211" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe211" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example211" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name211" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>indexOf()</code> </b></p>
+                            <p>возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1,
+                                если такого индекса нет.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe211" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>arr.indexOf(searchElement[, fromIndex = 0])</code> </i></b></p>
+                            <p><i class="c_burgundy">searchElement</i> - Искомый элемент в массиве.</p>
+                            <p><i class="c_burgundy ">fromIndex</i> - Индекс, с которого начинать поиск.
+                                Если индекс больше или равен длине массива, возвращается -1, что означает, что массив
+                                даже не просматривается. Если индекс является отрицательным числом, он трактуется как
+                                смещение с конца массива. Обратите внимание: если индекс отрицателен, массив всё равно
+                                просматривается от начала к концу. Если рассчитанный индекс оказывается меньше 0, поиск
+                                ведётся по всему массиву. Значение по умолчанию равно 0, что означает, что
+                                просматривается весь массив.
+                                Метод indexOf() сравнивает искомый элемент searchElement с элементами в массиве,
+                                используя строгое сравнение (en-US) (тот же метод используется оператором ===, тройное
+                                равно).</p>
+                        </div>
+                        <div class="tab-pane fade" id="example211" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p> <span class="c_yellow">[2, 5, 9]</span>.<span class="c_blue">indexOf</span>(<span class="c_yellow">2</span>)<span class="c_grey"> // 0</span></p>
+                                <p> <span class="c_yellow">[2, 5, 9]</span>.<span class="c_blue">indexOf</span>(<span class="c_yellow">2, -1</span>)<span class="c_grey"> // -1</span></p>
+                                <p> <span class="c_yellow">[2, 5, 9]</span>.<span class="c_blue">indexOf</span>(<span class="c_yellow">9, 2</span>)<span class="c_grey"> // 2</span></p>
+                                <p> <span class="c_yellow">[2, 5, 9]</span>.<span class="c_blue">indexOf</span>(<span class="c_yellow">2, -3</span>)<span class="c_grey"> // 0</span></p>
                             </code>
                         </div>
                     </div>
@@ -369,7 +1209,19 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script>
-       
+        var x = 'er e6 er6.6 e9,9 5,4gfh 4,5bfb'.split(' ')
+        // console.log(x)
+        var result ;
+        for (let i = 0; i < x.length; i++) {
+
+            if (typeof parseFloat(x[i]) === 'number') {
+
+                result= parseFloat(x[i])      
+                console.log(result) 
+                break;        
+            }
+        }
+        // console.log(result)
 
     </script>
 </body>
