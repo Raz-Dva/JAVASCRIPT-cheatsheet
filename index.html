@@ -137,11 +137,172 @@
         <div class="container">
             <h2 class="text-center header_block">Basic Objects</h2>
             <hr>
+            <!-- ------------------------------------------------ -->
+            <h3 class="text-center">Object Prototypes</h3>
+            <hr>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name01" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe02" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example03" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name01" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Object.prototype.hasOwnProperty()</code> </b></p>
+                            <p>возвращает логическое значение, указывающее, содержит ли объект указанное свойство.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe02" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>obj.hasOwnProperty(prop)</code> </i></b></p>
+                            <p><i class="c_burgundy ">prop</i>
+                                Имя проверяемого свойства.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example03" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p><span class="c_purple">const </span><span class="c_yellow">obj</span> = {<span class="c_red">prop</span>:''} </p>
+                                <p><span class="c_yellow">obj.</span><span class="c_blue">hasOwnProperty</span>(<span class="c_green">'prop'</span>)<span class="c_grey">// true</span> </p>
+                                <p><span class="c_purple">delete </span><span class="c_yellow">obj.</span><span class="c_red">prop</span> </p>
+                                <p><span class="c_yellow">obj.</span><span class="c_blue">hasOwnProperty</span>(<span class="c_green">'prop'</span>)<span class="c_grey">// false</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name04" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe05" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example06" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name04" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Object.getOwnPropertyNames()</code> </b></p>
+                            <p>возвращает массив со всеми свойствами (независимо от того, перечисляемые они или нет),
+                                найденными непосредственно в переданном объекте.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe05" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>Object.getOwnPropertyNames(obj)</code> </i></b></p>
+                            <p><i class="c_burgundy">obj</i>
+                                Объект, чьи перечисляемые и неперечисляемые собственные свойства будут возвращены.
+                                Возвращаемое значение массив строк, который соответствует свойствам, найденным
+                                непосредственно в данном
+                                объекте.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example06" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p><span class="c_purple">const </span><span class="c_yellow">arr</span> = [<span class="c_green">'a', 'b', 'c'</span>] </p>
+                                <p><span class="c_yellow">Object.</span><span class="c_blue">getOwnPropertyNames</span>(<span class="c_green">arr</span>)<span class="c_grey">// ["0", "1", "2", "length"]</span> </p>
+                                <p><span class="c_purple">const </span><span class="c_yellow">obj</span> = {<span class="c_green"> 0: 'a', 1: 'b', 2: 'c'</span>}</p>
+                                <p><span class="c_yellow">Object.</span><span class="c_blue">getOwnPropertyNames</span>(<span class="c_green">obj</span>)<span class="c_grey">//  ["0", "1", "2"]</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------- -->
+            <h3 class="text-center">Object Methods</h3>
+            <hr>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name07" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe08" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example09" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name07" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Object.assign()</code> </b></p>
+                            <p>используется для копирования значений всех собственных
+                                перечисляемых свойств из одного или более исходных объектов в целевой объект. После
+                                копирования он возвращает целевой объект.</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe08" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>Object.assign(target, ...sources)</code> </i></b></p>
+                            <p><i class="c_burgundy ">target</i>
+                                Целевой объект.</p>
+                            <p><i class="c_burgundy ">sources</i>
+                                Исходные объекты.</p>
+                            <p>Возвращается получившийся целевой объект.</p>
+                        </div>
+                        <div class="tab-pane fade" id="example09" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p><span class="c_purple">const </span><span class="c_yellow">obj</span> = {<span class="c_red">a</span>:1}</p>
+                                <p><span class="c_yellow">Object.</span><span class="c_blue">assign</span>({}, <span class="c_red">obj</span>)<span class="c_grey">// new object {a:1}</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 tabs_card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab_link active" data-toggle="tab" href="#name010" role="tab"
+                                aria-controls="home" aria-selected="false">NAME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#subscribe011" role="tab"
+                                aria-controls="profile" aria-selected="true">DESCRIPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab_link" data-toggle="tab" href="#example012" role="tab"
+                                aria-controls="contact" aria-selected="false">EXAMPLES</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="name010" role="tabpanel" aria-labelledby="">
+                            <p class="name_api"><b> <code>Object.values()</code> </b></p>
+                            <p> возвращает массив значений перечисляемых свойств объекта в том же порядке что и цикл
+                                for...in. Разница между циклом и методом в том, что цикл перечисляет свойства и из
+                                цепочки прототипов</p>
+                        </div>
+                        <div class="tab-pane fade  " id="subscribe011" role="tabpanel" aria-labelledby="">
+                            <p><b><i><code>Object.values(obj)</code> </i></b></p>
+                            <p><i class="c_burgundy ">obj</i>
+                                Объект, чьи значения перечисляемых свойств будут возвращены.</p>
+                            <p>Возвращаемое значение
+                                Массив содержащий значения перечисляемых свойств объекта.</>
+                        </div>
+                        <div class="tab-pane fade" id="example012" role="tabpanel" aria-labelledby="">
+                            <code class="st_color_scheme">
+                                <p><span class="c_purple">const </span><span class="c_yellow">obj</span> = {<span class="c_red">foo</span>:<span class="c_green">'bar'</span>; <span class="c_red">baz</span>:<span class="c_yellow">42</span>}</p>
+                                <p><span class="c_yellow">Object.</span><span class="c_blue">values</span>(<span class="c_red">obj</span>)<span class="c_grey">//  ['bar', 42]</span> </p>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------------- -->
             <h3 class="text-center">Global Methods</h3>
             <hr>
             <div class="row">
                 <!-- -----------------------  ID 0 + -------------------------- -->
-
                 <div class="col-xl-4 col-lg-6 tabs_card">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
@@ -1209,19 +1370,7 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script>
-        var x = 'er e6 er6.6 e9,9 5,4gfh 4,5bfb'.split(' ')
-        // console.log(x)
-        var result ;
-        for (let i = 0; i < x.length; i++) {
-
-            if (typeof parseFloat(x[i]) === 'number') {
-
-                result= parseFloat(x[i])      
-                console.log(result) 
-                break;        
-            }
-        }
-
+     
     </script>
 </body>
 
